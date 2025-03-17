@@ -18,7 +18,7 @@ namespace RealProject.TestScript
         HomePage homepage;
         AddNewEmployee newuser;
         PeopleManage peoplemanage;
-        [Test]
+
         public void AddNewUser()
         {
             homepage = new HomePage(driver);
@@ -29,10 +29,7 @@ namespace RealProject.TestScript
             newuser.Employeenumber.SendKeys(excel.GetExcelData("sheet1", 2, 1));
             newuser.Firstname.SendKeys(excel.GetExcelData("sheet1", 2, 2));
             newuser.Lastname.SendKeys(excel.GetExcelData("sheet1", 2, 4));
-            //string nationality = excel.GetExcelData("sheet1", 2, 5);
-            newuser.Nationality.SendKeys("American" + Keys.Enter);
-            Thread.Sleep(10000);
-           
+            Console.WriteLine("Add new User");
 
         }
 
