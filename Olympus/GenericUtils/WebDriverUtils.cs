@@ -577,5 +577,10 @@ namespace IceHRM.GenericUtils
             IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
             js.ExecuteScript("Document.getElementById('" + id + "').value='" + text + "';)");
         }
+
+        internal void ImplicitWait(object driver, int v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

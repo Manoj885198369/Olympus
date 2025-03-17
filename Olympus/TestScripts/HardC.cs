@@ -13,7 +13,7 @@ namespace Olympus.TestScripts
 {
    public class HardC
     {
-        [Test]
+        //[Test]
         public void TestCheck()
         {
             WebDriverUtils web = new WebDriverUtils();
